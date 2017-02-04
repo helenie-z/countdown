@@ -33,7 +33,8 @@ function initializeClock(id, finalDate){
   var timeinterval = setInterval(function(){
     var timeRemaining = timeDifference(finalDate);
 
-    clock.innerHTML = 'there is only <br>' +
+    clock.innerHTML = 'hey mark <br>' + "<br>" + 
+    					'there\'s only <br>' +
     					timeRemaining.days + ' days<br>' +
                       timeRemaining.hours + ' hours <br>' +
                       timeRemaining.minutes + ' minutes <br>' +
