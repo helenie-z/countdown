@@ -1,5 +1,5 @@
 var finalDate = 'February 28 2017 6:00:00 GMT+1300';
-
+var anniversary = 'December 2 2016 1:00:00 GMT+1300';
 //get difference 
 function timeDifference(finalDate) {
 	//difference in milliseconds
@@ -32,6 +32,7 @@ function initializeClock(id, finalDate){
   var clock = document.getElementById("clock");
   var timeinterval = setInterval(function(){
     var timeRemaining = timeDifference(finalDate);
+    var anniversaryTimeRemaining = timeDifference(anniversary);
 
     clock.innerHTML = 'hey mark <br>' + "<br>" + 
     					'there\'s only <br>' +
@@ -39,7 +40,14 @@ function initializeClock(id, finalDate){
                       timeRemaining.hours + ' hours <br>' +
                       timeRemaining.minutes + ' minutes <br>' +
                       'and ' + timeRemaining.seconds +' seconds <br>' + 
-                      'until i see you again :)';
+                      'until i see you again :) <br>' + 
+  						'<br>ALSO<br>' +
+  							anniversaryTimeRemaining.days + ' days<br>' +
+                      anniversaryTimeRemaining.hours + ' hours <br>' +
+                      anniversaryTimeRemaining.minutes + ' minutes <br>' +
+                      'and ' + anniversaryTimeRemaining.seconds +' seconds <br>' + 
+                      	'since we have been together :D'
+  						;
     if(timeRemaining.total <= 0){
       clearInterval(timeinterval);
     }
