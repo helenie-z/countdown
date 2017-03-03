@@ -1,4 +1,4 @@
-var finalDate = 'February 28 2017 6:00:00 GMT+1300';
+var finalDate = 'March 5 2017 18:00:00 GMT+1300';
 var anniversary = 'December 2 2016 1:00:00 GMT+1300';
 var alertDone = false;
 //get difference 
@@ -38,12 +38,17 @@ function initializeClock(id, finalDate){
     var timeRemaining = timeDifference(finalDate);
     var anniversaryTimeRemaining = timeDifference(anniversary);
 
+    /*
     if (!alertDone) {
     	alert("OMG ONLY " + timeRemaining.days + " DAYS AND I CAN'T WAIT TO SEE YOU");
     	alertDone = true;
     }
+    */ 
 
-    clock.innerHTML = 'hey mark <br>' + "<br>" + 
+    clock.innerHTML = 
+
+    'hey mark <br>' + "<br>" + 
+    
     					'there\'s only ' + 
     					Math.abs(timeRemaining.days) + ' days <br>' +
                       timeRemaining.hours + ' hours <br>' +
@@ -51,13 +56,15 @@ function initializeClock(id, finalDate){
                       'and ' + timeRemaining.seconds +' seconds until i see you again :) <br>' + '<br>' + 
                       
   						'and ' +
+    
   						anniversaryTimeRemaining.days + ' days<br>' +
                       anniversaryTimeRemaining.hours + ' hours <br>' +
                       anniversaryTimeRemaining.minutes + ' minutes <br>' +
                       'and ' + anniversaryTimeRemaining.seconds +' seconds since we have been together :D';
+    /*
     if(timeRemaining.total <= 0){
       clearInterval(timeinterval);
-    }
+    } */
   }, 1000);
 
 }
