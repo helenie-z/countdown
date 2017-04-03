@@ -44,7 +44,7 @@ function initializeClock(id, finalDate){
     	alertDone = true;
     }
     */ 
-
+    /*
     clock.innerHTML = 
 
     'hey mark <br>' + "<br>" + 
@@ -61,6 +61,17 @@ function initializeClock(id, finalDate){
                       anniversaryTimeRemaining.hours + ' hours <br>' +
                       anniversaryTimeRemaining.minutes + ' minutes <br>' +
                       'and ' + anniversaryTimeRemaining.seconds +' seconds since we have been together :D';
+
+    */
+
+    clock.innerHTML = 
+
+    'hey mark <br>' + "<br>" + 
+    
+              'WE HAVE BEEN TOGETHER FOR ' +  anniversaryTimeRemaining.days + ' DAYS <br>' +
+                      anniversaryTimeRemaining.hours + ' HOURS <br>' +
+                      anniversaryTimeRemaining.minutes + ' MINUTES <br>' +
+                      'and ' + anniversaryTimeRemaining.seconds +' SECONDS :D';
     /*
     if(timeRemaining.total <= 0){
       clearInterval(timeinterval);
