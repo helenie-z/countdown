@@ -1,5 +1,6 @@
-var finalDate = 'March 5 2017 18:00:00 GMT+1300';
+//var finalDate = 'March 5 2017 18:00:00 GMT+1300';
 var anniversary = 'December 2 2016 1:00:00 GMT+1300';
+var finalDate = 'November 23 2018 10:00:00 GMT+1300';
 var alertDone = false;
 //get difference 
 function timeDifference(date) {
@@ -38,32 +39,36 @@ function initializeClock(id, finalDate){
     var timeRemaining = timeDifference(finalDate);
     var anniversaryTimeRemaining = timeDifference(anniversary);
 
-    /*
+    
     if (!alertDone) {
     	alert("OMG ONLY " + timeRemaining.days + " DAYS AND I CAN'T WAIT TO SEE YOU");
     	alertDone = true;
     }
-    */ 
-    /*
+    
+    
     clock.innerHTML = 
 
-    'hey mark <br>' + "<br>" + 
+    'hey kittie! <br>' + "<br>" + 
     
     					'there\'s only ' + 
     					Math.abs(timeRemaining.days) + ' days <br>' +
                       timeRemaining.hours + ' hours <br>' +
                       timeRemaining.minutes + ' minutes <br>' +
-                      'and ' + timeRemaining.seconds +' seconds until i see you again :) <br>' + '<br>' + 
+                      'and ' + timeRemaining.seconds +' seconds until i see you again! <br>' + '<br>' + 
                       
   						'and ' +
     
   						anniversaryTimeRemaining.days + ' days<br>' +
                       anniversaryTimeRemaining.hours + ' hours <br>' +
                       anniversaryTimeRemaining.minutes + ' minutes <br>' +
-                      'and ' + anniversaryTimeRemaining.seconds +' seconds since we have been together :D';
+                      'and ' + anniversaryTimeRemaining.seconds +' seconds since we have been together :D <br>' + '<br>'+ 
 
-    */
+                      'love from excited cookie <3' ;
 
+    
+
+    //for anniversary
+    /*
     clock.innerHTML = 
 
     'hey mark <br>' + "<br>" + 
