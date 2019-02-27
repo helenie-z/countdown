@@ -1,6 +1,7 @@
 //var finalDate = 'March 5 2017 18:00:00 GMT+1300';
 var anniversary = 'December 2 2016 1:00:00 GMT+1300';
 var finalDate = 'November 23 2018 10:00:00 GMT+1300';
+var weddingDate = 'July 20 2019 12:30:00 GMT+1300';
 var alertDone = false;
 //get difference 
 function timeDifference(date) {
@@ -41,7 +42,7 @@ function initializeClock(id, finalDate){
 
     
     if (!alertDone) {
-    	alert("OMG ONLY " + timeRemaining.days + " DAYS AND I CAN'T WAIT TO SEE YOU");
+    	alert("OMG ONLY " + timeRemaining.days + " DAYS TILL WE ARE MARRIED!");
     	alertDone = true;
     }
     
@@ -54,7 +55,7 @@ function initializeClock(id, finalDate){
     					Math.abs(timeRemaining.days) + ' days <br>' +
                       timeRemaining.hours + ' hours <br>' +
                       timeRemaining.minutes + ' minutes <br>' +
-                      'and ' + timeRemaining.seconds +' seconds until i see you again! <br>' + '<br>' + 
+                      'and ' + timeRemaining.seconds +' seconds until we say our vows! AAAAAHHH!!! <br>' + '<br>' + 
                       
   						'and ' +
     
@@ -86,7 +87,7 @@ function initializeClock(id, finalDate){
 }
 
 window.onload = function(){  
-	initializeClock("clock", finalDate);
+	initializeClock("clock", weddingDate);
 
 }
 
